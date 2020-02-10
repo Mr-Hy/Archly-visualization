@@ -20,7 +20,7 @@
 	<div id="vvveb-builder">
 				
 				<div id="top-panel">
-					<img src="img/logosmall.png" alt="Vvveb" class="float-left" id="logo">
+					<img src="img/logosmall.png" alt="Hyweb" class="float-left" id="logo">
 					
 					
 					<div class="btn-group float-left" role="group">
@@ -948,19 +948,19 @@ $(document).ready(function()
 	{
 		$("#vvveb-builder").addClass("no-right-panel");
 		$(".component-properties-tab").show();
-		Vvveb.Components.componentPropertiesElement = "#left-panel .component-properties";
+		Hyweb.Components.componentPropertiesElement = "#left-panel .component-properties";
 	} else
 	{
 		$(".component-properties-tab").hide();
 	}
 
-	Vvveb.Builder.init('demo/narrow-jumbotron/index.html', function() {
+	Hyweb.Builder.init('demo/narrow-jumbotron/index.html', function() {
 		//run code after page/iframe is loaded
 	});
 
-	Vvveb.Gui.init();
-	Vvveb.FileManager.init();
-	Vvveb.FileManager.addPages(
+	Hyweb.Gui.init();
+	Hyweb.FileManager.init();
+	Hyweb.FileManager.addPages(
 	[
 		{name:"narrow-jumbotron", title:"Jumbotron",  url: "demo/narrow-jumbotron/index.html", assets: ['demo/narrow-jumbotron/narrow-jumbotron.css']},
 		{name:"landing-page", title:"Landing page",  url: "demo/startbootstrap-landing-page/index.html", assets: ['demo/startbootstrap-landing-page/css/landing-page.min.css']},
@@ -983,7 +983,7 @@ $(document).ready(function()
 		
 	]);
 	
-	Vvveb.FileManager.loadPage("narrow-jumbotron");
+	Hyweb.FileManager.loadPage("narrow-jumbotron");
 });
 </script>
 </body>

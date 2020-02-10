@@ -55,9 +55,9 @@ By default the editor comes with Bootstrap 4 and Widgets components and can be e
 <script>
 $(document).ready(function() 
 {
-	Vvveb.Builder.init('demo/index.html', function() {
+	Hyweb.Builder.init('demo/index.html', function() {
 		//load code after page is loaded here
-		Vvveb.Gui.init();
+		Hyweb.Gui.init();
 	});
 });
 </script>

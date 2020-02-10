@@ -1,5 +1,5 @@
 /* jshint esversion:6 */
-Vvveb.Gui.download = function() {
+Hyweb.Gui.download = function() {
   function isLocalUrl(url) {
     return url.indexOf("//") == -1;
   }
@@ -8,7 +8,7 @@ Vvveb.Gui.download = function() {
     if (isLocalUrl(url)) assets.push(url);
   }
 
-  var html = Vvveb.Builder.frameHtml;
+  var html = Hyweb.Builder.frameHtml;
   var assets = [];
 
   //stylesheets
@@ -40,8 +40,8 @@ Vvveb.Gui.download = function() {
 };
 /*
 
-filename = /[^\/]+$/.exec(Vvveb.Builder.iframe.src)[0];
-uriContent = "data:application/octet-stream,"  + encodeURIComponent(Vvveb.Builder.getHtml());
+filename = /[^\/]+$/.exec(Hyweb.Builder.iframe.src)[0];
+uriContent = "data:application/octet-stream,"  + encodeURIComponent(Hyweb.Builder.getHtml());
 
 var link = document.createElement('a');
 if ('download' in link)

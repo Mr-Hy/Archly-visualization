@@ -1,4 +1,4 @@
-Vvveb.Components.extend("_base", "_base", {
+Hyweb.Components.extend("_base", "_base", {
 	 properties: [
 	 {
         name: "Font family",

@@ -17,14 +17,11 @@
 </head>
 
 <body>
-
 	<!-- 页面 -->
 	<div id="vvveb-builder">
 		<!-- 头部导航栏 -->
 		<div id="top-panel">
-			<img src="img/logosmall.png" alt="Vvveb" class="float-left" id="logo">
-
-
+			<img src="img/logosmall.png" alt="Hyweb" class="float-left" id="logo">
 			<div class="btn-group float-left" role="group">
 				<button class="btn btn-light" title="Toggle file manager" id="toggle-file-manager-btn"
 					data-vvveb-action="toggleFileManager" data-toggle="button" aria-pressed="false">
@@ -107,25 +104,20 @@
 		</div>
 		<!-- 左侧导航栏 -->
 		<div id="left-panel">
-
 			<div id="filemanager">
 				<div class="header">
 					<a href="#" class="text-secondary">页面</a>
-
 					<div class="btn-group responsive-btns mr-4 float-right" role="group">
 						<button class="btn btn-link btn-sm" title="New file" id="new-file-btn"
 							data-vvveb-action="newPage" data-vvveb-shortcut="">
 							<i class="la la-file"></i> <small>新建页面</small>
 						</button>
-
-						<!--  &ensp;
+						<!-- &ensp;
 									  <button class="btn btn-link text-dark p-0"  title="Delete file" id="delete-file-btn" data-vvveb-action="deletePage" data-vvveb-shortcut="">
 										  <i class="la la-trash"></i> <small>Delete</small>
 									  </button> -->
 					</div>
-
 				</div>
-
 				<div class="tree">
 					<ol>
 					</ol>
@@ -259,17 +251,13 @@
 		<div id="canvas">
 			<div id="iframe-wrapper">
 				<div id="iframe-layer">
-
 					<div id="highlight-box">
 						<div id="highlight-name"></div>
-
 						<div id="section-actions">
 							<a id="add-section-btn" href="" title="Add element"><i class="la la-plus"></i></a>
 						</div>
 					</div>
-
 					<div id="select-box">
-
 						<div id="wysiwyg-editor">
 							<a id="bold-btn" href="" title="Bold"><i><strong>B</strong></i></a>
 							<a id="italic-btn" href="" title="Italic"><i>I</i></a>
@@ -277,22 +265,18 @@
 							<a id="strike-btn" href="" title="Strikeout"><del>S</del></a>
 							<a id="link-btn" href="" title="Create link"><strong>a</strong></a>
 						</div>
-
 						<div id="select-actions">
 							<a id="drag-btn" href="" title="Drag element"><i class="la la-arrows"></i></a>
-							<a id="parent-btn" href="" title="Select parent"><i
-									class="la la-level-down la-rotate-180"></i></a>
-
+							<a id="parent-btn" href="" title="Select parent">
+								<i class="la la-level-down la-rotate-180"></i></a>
 							<a id="up-btn" href="" title="Move element up"><i class="la la-arrow-up"></i></a>
 							<a id="down-btn" href="" title="Move element down"><i class="la la-arrow-down"></i></a>
 							<a id="clone-btn" href="" title="Clone element"><i class="la la-copy"></i></a>
 							<a id="delete-btn" href="" title="Remove element"><i class="la la-trash"></i></a>
 						</div>
 					</div>
-
 					<!-- add section box -->
 					<div id="add-section-box" class="drag-elements">
-
 						<div class="header">
 							<ul class="nav nav-tabs" id="box-elements-tabs" role="tablist">
 								<li class="nav-item component-tab">
@@ -317,14 +301,10 @@
 									</a>
 								</li>
 							</ul>
-
 							<div class="section-box-actions">
-
 								<div id="close-section-btn" class="btn btn-light btn-sm bg-white btn-sm float-right"><i
 										class="la la-close"></i></div>
-
 								<div class="small mt-1 mr-3 float-right">
-
 									<div class="custom-control custom-radio custom-control-inline">
 										<input type="radio" id="add-section-insert-mode-after" value="after"
 											checked="checked" name="add-section-insert-mode"
@@ -332,18 +312,14 @@
 										<label class="custom-control-label"
 											for="add-section-insert-mode-after">After</label>
 									</div>
-
 									<div class="custom-control custom-radio custom-control-inline">
 										<input type="radio" id="add-section-insert-mode-inside" value="inside"
 											name="add-section-insert-mode" class="custom-control-input">
 										<label class="custom-control-label"
 											for="add-section-insert-mode-inside">Inside</label>
 									</div>
-
 								</div>
-
 							</div>
-
 							<div class="tab-content">
 								<div class="tab-pane fade show active" id="box-components" role="tabpanel"
 									aria-labelledby="components-tab">
@@ -804,9 +780,7 @@
 						</button>
 					</div>
 					<div class="modal-body">
-
 						<textarea rows="25" cols="150" class="form-control"></textarea>
-
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal"><i
@@ -912,9 +886,9 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
-	<!-- builder code-->
+	<!-- builder code / 构建器代码-->
 	<script src="libs/builder/builder.js"></script>
-	<!-- undo manager-->
+	<!-- undo manager / 撤销管理器-->
 	<script src="libs/builder/undo.js"></script>
 	<!-- inputs-->
 	<script src="libs/builder/inputs.js"></script>
@@ -927,7 +901,7 @@
 
 
 	<!-- components-->
-	<!-- <script src="libs/builder/components-server.js"></script>	 -->
+	<script src="libs/builder/components-server.js"></script>
 	<script src="libs/builder/components-bootstrap4.js"></script>
 	<script src="libs/builder/components-widgets.js"></script>
 
@@ -950,7 +924,7 @@
 
 
 	<!-- autocomplete plugin used by autocomplete input-->
-	<script src="libs/autocomplete/jquery.autocomplete.js"></script>	
+	<script src="libs/autocomplete/jquery.autocomplete.js"></script>
 
 	<script>
 		$(document).ready(function () {
@@ -958,28 +932,28 @@
 			if (window.location.hash.indexOf("no-right-panel") != -1) {
 				$("#vvveb-builder").addClass("no-right-panel");
 				$(".component-properties-tab").show();
-				Vvveb.Components.componentPropertiesElement = "#left-panel .component-properties";
+				Hyweb.Components.componentPropertiesElement = "#left-panel .component-properties";
 			} else {
 				$(".component-properties-tab").hide();
 			}
 
-			Vvveb.Builder.init('demo/narrow-jumbotron/index.html', function () {
+			Hyweb.Builder.init('demo/narrow-jumbotron/index.html', function () {
 				//run code after page/iframe is loaded
 			});
 
-			Vvveb.Gui.init();
-			Vvveb.FileManager.init();
-			Vvveb.FileManager.addPages(
+			Hyweb.Gui.init();
+			Hyweb.FileManager.init();
+			Hyweb.FileManager.addPages(
 				[
 					{ name: "narrow-jumbotron", title: "Jumbotron", url: "demo/narrow-jumbotron/index.html", assets: ['demo/narrow-jumbotron/narrow-jumbotron.css'] },
-					// { name: "landing-page", title: "Landing page", url: "demo/startbootstrap-landing-page/index.html", assets: ['demo/startbootstrap-landing-page/css/landing-page.min.css'] },
-					// { name: "album", title: "Album", url: "demo/album/index.html", folder: "content", assets: ['demo/album/album.css'] },
-					// { name: "blog", title: "Blog", url: "demo/blog/index.html", folder: "content", assets: ['demo/blog/blog.css'] },
-					// { name: "carousel", title: "Carousel", url: "demo/carousel/index.html", folder: "content", assets: ['demo/carousel/carousel.css'] },
-					// { name: "offcanvas", title: "Offcanvas", url: "demo/offcanvas/index.html", folder: "content", assets: ['demo/offcanvas/offcanvas.css', 'demo/offcanvas/offcanvas.js'] },
-					// { name: "pricing", title: "Pricing", url: "demo/pricing/index.html", folder: "ecommerce", assets: ['demo/pricing/pricing.css'] },
-					// { name: "product", title: "Product", url: "demo/product/index.html", folder: "ecommerce", assets: ['demo/product/product.css'] },
-					//uncomment php code below and rename file to .php extension to load saved html files in the editor
+					{ name: "landing-page", title: "Landing page", url: "demo/startbootstrap-landing-page/index.html", assets: ['demo/startbootstrap-landing-page/css/landing-page.min.css'] },
+					{ name: "album", title: "Album", url: "demo/album/index.html", folder: "content", assets: ['demo/album/album.css'] },
+					{ name: "blog", title: "Blog", url: "demo/blog/index.html", folder: "content", assets: ['demo/blog/blog.css'] },
+					{ name: "carousel", title: "Carousel", url: "demo/carousel/index.html", folder: "content", assets: ['demo/carousel/carousel.css'] },
+					{ name: "offcanvas", title: "Offcanvas", url: "demo/offcanvas/index.html", folder: "content", assets: ['demo/offcanvas/offcanvas.css', 'demo/offcanvas/offcanvas.js'] },
+					{ name: "pricing", title: "Pricing", url: "demo/pricing/index.html", folder: "ecommerce", assets: ['demo/pricing/pricing.css'] },
+					{ name: "product", title: "Product", url: "demo/product/index.html", folder: "ecommerce", assets: ['demo/product/product.css'] },
+					// uncomment php code below and rename file to .php extension to load saved html files in the editor
 
 					// <?php 
 					//    $htmlFiles = glob("*.html");
@@ -992,8 +966,12 @@
 
 				]);
 
-			Vvveb.FileManager.loadPage("narrow-jumbotron");
+			Hyweb.FileManager.loadPage("narrow-jumbotron");
 		});
+	</script>
+
+	<script>
+		console.log(Hyweb)
 	</script>
 </body>
 
